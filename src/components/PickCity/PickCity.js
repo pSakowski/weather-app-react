@@ -5,12 +5,13 @@ import styles from './PickCity.module.scss';
 import { useState } from 'react';
 
 const PickCity = ({ action }) => {
+
   const [city, setCity] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
-    action({ city });
-    setCity('');
+    action( city );
+    setCity('')
 };
 
   return (
